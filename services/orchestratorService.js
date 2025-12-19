@@ -1,7 +1,9 @@
 // services/orchestratorService.js
 
-const ACQUIRE_URL = "http://localhost:3001";
-const PREDICT_URL = "http://localhost:3002";
+const ACQUIRE_URL = process.env.ACQUIRE_URL;
+const PREDICT_URL = process.env.PREDICT_URL;
+
+
 
 async function runFlow(correlationId) {
 
